@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #ff9ad5 0%,
+    #ff69b4 50%,
+    #ff1493 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+button {
+  margin-top: 24px;
+  padding: 14px 32px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.3);
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.answer-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.yes-button {
+  background: #22c55e;
+}
+
+.no-button {
+  background: #ef4444;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+input[type="date"] {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+}

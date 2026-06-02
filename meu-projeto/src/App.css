@@ -27,7 +27,7 @@ html,
   justify-content: center;
   align-items: center;
 
-  color: white;
+  color: white !important;
   font-family: Arial, sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
